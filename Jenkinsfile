@@ -1,5 +1,5 @@
 node {
-    withDockerContainer(args: '-u root', image: 'maven:latest'){
+    withDockerContainer(args: '-u root', image: 'maven:3.9.0'){
     stage('Build'){
         sh 'mvn -B -DskipTests clean package'
     }
