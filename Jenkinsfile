@@ -7,7 +7,7 @@ node {
         sh 'mvn test'
     }
     stage('Deploy') {
-        sh './jenkins/scripts/deliver.sh'
+        sh 'chmod +x ./jenkins/scripts/deliver.sh'
     }
  }
 }
